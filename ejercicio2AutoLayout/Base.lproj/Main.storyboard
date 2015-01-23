@@ -2,7 +2,6 @@
 <document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="6254" systemVersion="14B25" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="vXZ-lx-hvc">
     <dependencies>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="6247"/>
-        <capability name="Aspect ratio constraints" minToolsVersion="5.1"/>
         <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
     </dependencies>
     <scenes>
@@ -18,21 +17,27 @@
                         <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                         <subviews>
-                            <view contentMode="scaleToFill" misplaced="YES" translatesAutoresizingMaskIntoConstraints="NO" id="2KV-33-LCf">
-                                <rect key="frame" x="199" y="20" width="200" height="150"/>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="2KV-33-LCf">
+                                <rect key="frame" x="16" y="20" width="200" height="150"/>
                                 <color key="backgroundColor" white="0.0" alpha="1" colorSpace="calibratedWhite"/>
-                                <constraints>
-                                    <constraint firstAttribute="width" secondItem="2KV-33-LCf" secondAttribute="height" multiplier="4:3" id="nxh-ls-LgO"/>
-                                </constraints>
+                            </view>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="e6I-PQ-ec6">
+                                <rect key="frame" x="384" y="20" width="200" height="150"/>
+                                <color key="backgroundColor" red="0.19977588147259284" green="1" blue="0.90366307035442983" alpha="1" colorSpace="calibratedRGB"/>
+                                <color key="tintColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
                             </view>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
                         <constraints>
-                            <constraint firstItem="2KV-33-LCf" firstAttribute="leading" relation="lessThanOrEqual" secondItem="kh9-bI-dsS" secondAttribute="leadingMargin" constant="184" id="C4t-w1-brY"/>
-                            <constraint firstItem="2fi-mo-0CV" firstAttribute="top" secondItem="2KV-33-LCf" secondAttribute="bottom" constant="430" id="IUM-cv-VYG"/>
-                            <constraint firstAttribute="trailingMargin" relation="lessThanOrEqual" secondItem="2KV-33-LCf" secondAttribute="trailing" constant="184" id="a9o-DZ-33W"/>
-                            <constraint firstAttribute="centerX" secondItem="2KV-33-LCf" secondAttribute="centerX" id="aeg-fE-OCV"/>
-                            <constraint firstItem="2KV-33-LCf" firstAttribute="top" secondItem="jyV-Pf-zRb" secondAttribute="bottom" id="mPr-kT-zxi"/>
+                            <constraint firstItem="e6I-PQ-ec6" firstAttribute="leading" secondItem="2KV-33-LCf" secondAttribute="trailing" constant="168" id="6zR-za-mHr"/>
+                            <constraint firstItem="2KV-33-LCf" firstAttribute="top" secondItem="jyV-Pf-zRb" secondAttribute="bottom" id="7P5-Ar-eOM"/>
+                            <constraint firstItem="e6I-PQ-ec6" firstAttribute="trailing" secondItem="kh9-bI-dsS" secondAttribute="trailingMargin" id="8H8-wo-ro6"/>
+                            <constraint firstItem="2fi-mo-0CV" firstAttribute="top" secondItem="e6I-PQ-ec6" secondAttribute="bottom" constant="430" id="AZ9-9N-IMP"/>
+                            <constraint firstItem="2KV-33-LCf" firstAttribute="leading" secondItem="kh9-bI-dsS" secondAttribute="leadingMargin" id="RCo-Qg-3m5"/>
+                            <constraint firstItem="e6I-PQ-ec6" firstAttribute="top" secondItem="jyV-Pf-zRb" secondAttribute="bottom" id="XNX-RK-sPI"/>
+                            <constraint firstItem="2fi-mo-0CV" firstAttribute="top" secondItem="2KV-33-LCf" secondAttribute="bottom" constant="430" id="hhB-74-BIB"/>
+                            <constraint firstItem="e6I-PQ-ec6" firstAttribute="height" secondItem="2KV-33-LCf" secondAttribute="height" id="rhA-Bl-k9e"/>
+                            <constraint firstItem="e6I-PQ-ec6" firstAttribute="width" secondItem="2KV-33-LCf" secondAttribute="width" id="y02-fO-i4i"/>
                         </constraints>
                     </view>
                 </viewController>
